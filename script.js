@@ -26,6 +26,8 @@ const addNote = () => {
     </div>
   `
   );
+
+  note.value = '';
 };
 
 const toggleModal = () => {
