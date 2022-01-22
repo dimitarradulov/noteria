@@ -1,0 +1,200 @@
+:root {
+  --dark-green: #00473e;
+  --gray: #475d5b;
+  --yellow: #faae2b;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  line-height: 1.2;
+  background-color: #f2f7f5;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--dark-green);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--gray);
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.logo {
+  max-width: 20rem;
+  height: auto;
+}
+
+.note,
+.notes__note {
+  border: 1px solid var(--dark-green);
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.note {
+  margin: 1.5rem 0;
+  width: 100%;
+  min-height: 10rem;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: var(--yellow);
+  color: var(--dark-green);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #f9a10a;
+}
+
+.btn-details {
+  font-size: 1.4rem;
+}
+
+.notes {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.notes__note {
+  background-color: #fff;
+  max-height: 20rem;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.notes__note > * {
+  margin-bottom: 1rem;
+}
+
+.notes__note > *:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.delete-icon {
+  position: absolute;
+  right: 1%;
+
+  color: var(--gray);
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--yellow);
+  padding: 0rem 0.5rem;
+  border-radius: 10px;
+}
+
+.notes__note-body {
+  max-height: 4rem;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: var(--gray);
+  float: right;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 1400px) {
+  .modal-content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    margin: 70% auto;
+    width: 90%;
+  }
+}

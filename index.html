@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noteria - Note Taking App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="noteria.svg" alt="Noteria Logo" class="logo" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="add-note text-center">
+          <h1>Add A New Note:</h1>
+          <textarea
+            class="note"
+            placeholder="Write your note here..."
+          ></textarea>
+          <button class="btn btn-add">Add Note</button>
+        </div>
+
+        <div class="notes">
+          <!-- <div class="notes__note">
+            <span class="delete-icon">X</span>
+            <h3>Note #1</h3>
+            <p class="notes__note-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              aliquam neque amet? Doloribus architecto atque reiciendis
+              incidunt, mollitia facere eius? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ad aliquam neque amet? Doloribus
+              architecto atque reiciendis incidunt, mollitia facere eius? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
+              neque amet? Doloribus architecto atque reiciendis incidunt,
+              mollitia facere eius? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ad aliquam neque amet? Doloribus architecto
+              atque reiciendis incidunt, mollitia facere eius? Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ad aliquam neque amet?
+              Doloribus architecto atque reiciendis incidunt, mollitia facere
+              eius?
+            </p>
+            <button class="btn btn-details">View Details</button>
+          </div>
+
+          <div class="notes__note">
+            <span class="delete-icon">X</span>
+            <h3>Note #1</h3>
+            <p class="notes__note-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              aliquam neque amet? Doloribus architecto atque reiciendis
+              incidunt, mollitia facere eius? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ad aliquam neque amet? Doloribus
+              architecto atque reiciendis incidunt, mollitia facere eius? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
+              neque amet? Doloribus architecto atque reiciendis incidunt,
+              mollitia facere eius? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ad aliquam neque amet? Doloribus architecto
+              atque reiciendis incidunt, mollitia facere eius? Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ad aliquam neque amet?
+              Doloribus architecto atque reiciendis incidunt, mollitia facere
+              eius?
+            </p>
+            <button class="btn btn-details">View Details</button>
+          </div>
+          <div class="notes__note">
+            <span class="delete-icon">X</span>
+            <h3>Note #1</h3>
+            <p class="notes__note-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              aliquam neque amet? Doloribus architecto atque reiciendis
+              incidunt, mollitia facere eius? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ad aliquam neque amet? Doloribus
+              architecto atque reiciendis incidunt, mollitia facere eius? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
+              neque amet? Doloribus architecto atque reiciendis incidunt,
+              mollitia facere eius? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ad aliquam neque amet? Doloribus architecto
+              atque reiciendis incidunt, mollitia facere eius? Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ad aliquam neque amet?
+              Doloribus architecto atque reiciendis incidunt, mollitia facere
+              eius?
+            </p>
+            <button class="btn btn-details">View Details</button>
+          </div> -->
+        </div>
+
+        <div id="myModal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
